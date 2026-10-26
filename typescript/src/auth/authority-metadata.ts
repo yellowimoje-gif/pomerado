@@ -12,7 +12,7 @@ const authorityCheckStages = [
 ] as const;
 export type AuthorityCheckStage = (typeof authorityCheckStages)[number];
 
-export const authorityCheckReasons = [
+const authorityCheckReasons = [
   "authentication_failed:authentication_failed",
   "authentication_failed:fresh_authentication_required",
   "authentication_failed:missing_bearer",
